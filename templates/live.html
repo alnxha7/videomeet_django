@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videomeet</title>
+    <script defer src="../static/js/app.js"></script>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="live-container">
+        <div class="left-section">
+            <img class="profile-photo" src="../static/images/main_profile.jpg" alt="Profile Photo">
+            <p>Name: Alansha</p>
+        </div>
+        <div class="middle-section">
+            <div class="live-video">
+                <video id="live-video" autoplay muted></video>
+            </div>
+            <div class="control-bar">
+                <button id="mic-button" class="control-button">Mic Off</button>
+                <button id="camera-button" class="control-button">Camera Off</button>
+                <button id="share-screen-button" class="control-button">Share Screen</button>
+                <button id="end-call-button" class="control-button">End Call</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="logo-frame">
+                <img class="logo" src="../static/images/logo.png" alt="Videomeet Logo">
+            </div>
+            <div class="people-list">
+                <p>Attending:</p>
+                <div class="attendee">
+                    <img class="attendee-photo" src="../static/images/user_profile.png" alt="User 1">
+                    <p>User 1</p>
+                </div>
+                <div class="attendee">
+                    <img class="attendee-photo" src="../static/images/user_profile.png" alt="User 2">
+                    <p>User 2</p>
+                </div>
+                <div class="attendee">
+                    <img class="attendee-photo" src="../static/images/user_profile.png" alt="User 3">
+                    <p>User 3</p>
+                </div>
+                <div class="attendee">
+                    <img class="attendee-photo" src="../static/images/user_profile.png" alt="User 4">
+                    <p>User 4</p>
+                </div>
+            </div>
+            <div class="notes-section">
+                <button id="notes-button" class="control-button">Notes</button>
+                <div id="notes-area" class="hidden">
+                    <div id="chat-display" class="chat-display"></div>
+                    <textarea id="notes-input" placeholder="Type your notes here..."></textarea>
+                    <button id="send-notes-button" class="control-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
